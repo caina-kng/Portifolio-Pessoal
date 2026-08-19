@@ -1,0 +1,6 @@
+{
+  "name": "João Cainã — Portfólio",
+  "description": "Portfólio pessoal de João Cainã, conectando disciplina, estratégia, dados, tecnologia, inteligência artificial e esporte.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

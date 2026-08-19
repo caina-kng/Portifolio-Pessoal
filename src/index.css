@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Inter', 'Syne', sans-serif;
+    --font-body: 'Inter', 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #0B0D0F;
+    color: #F5F5F5;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tech {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Subtle Noise Texture Overlay */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  opacity: 0.035;
+  pointer-events: none;
+  background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+  z-index: 1;
+}
+
+/* Vertical Text Rail for Luxury Editorial Feel */
+.vertical-rail {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/* Editorial Gold Line Gradient */
+.gold-line {
+  background: linear-gradient(to bottom, transparent, #D4A017, transparent);
+}
+
+.gold-line-h {
+  background: linear-gradient(to right, transparent, #D4A017, transparent);
+}
+
+/* Hollow Outline Text Stroke */
+.text-stroke-white {
+  -webkit-text-stroke: 1.5px #F5F7FA;
+  color: transparent;
+}
+
+.text-stroke-gold {
+  -webkit-text-stroke: 1px #D4A017;
+  color: transparent;
+}
+
+/* Background Subtle Tactical Grid Texture */
+.bg-tactical-grid {
+  background-image: 
+    linear-gradient(to right, rgba(245, 247, 250, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 247, 250, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(212, 160, 23, 0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0F12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E232B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4A017;
+}
+
+/* Precision Hairlines */
+.border-gold-subtle {
+  border-color: rgba(212, 160, 23, 0.22);
+}
+
+.border-steel-subtle {
+  border-color: rgba(245, 247, 250, 0.08);
+}
+
+/* Subtle glow for interactive focus */
+.gold-glow-sm {
+  box-shadow: 0 0 20px -5px rgba(212, 160, 23, 0.18);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 25px -4px rgba(212, 160, 23, 0.25);
+}
+
+/* Ultra-refined motion & microinteraction classes */
+.ease-cinematic {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.ease-micro {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Premium Card hover with GPU acceleration */
+.card-hover-refined {
+  transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1), 
+              border-color 300ms cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 400ms cubic-bezier(0.22, 1, 0.36, 1),
+              background-color 300ms ease;
+  will-change: transform;
+}
+
+.card-hover-refined:hover {
+  transform: translate3d(0, -3px, 0);
+}
+
+/* Button microinteraction */
+.btn-refined {
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1), 
+              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+              border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 300ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.btn-refined:hover {
+  transform: translate3d(0, -2px, 0);
+}
+
+.btn-refined:active {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Accessible Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
