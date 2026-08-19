@@ -49,3 +49,15 @@ export interface ConnectionElement {
   label: string;
   sublabel: string;
 }
+
+export interface ProjectItem {
+  id: string;
+  number: string;
+  title: string;
+  eyebrow: string;
+  description: string;
+  stack: string[];
+  status: string;
+  liveUrl?: string;
+  githubUrl?: string;
+}
